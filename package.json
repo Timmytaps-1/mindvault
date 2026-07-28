@@ -8,10 +8,10 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev:server": "pnpm --filter @mindvault/server dev",
-    "dev:web": "pnpm --filter @mindvault/web dev",
-    "build:registry-client": "pnpm --filter @mindvault/registry-client build",
-    "build:server": "pnpm run build:registry-client && pnpm --filter @mindvault/server build",
+    "dev:server": "node init && pnpm --filter @mindvault/server dev",
+    "dev:web": "node init && pnpm --filter @mindvault/web dev",
+    "build:registry-client": "node init && pnpm --filter @mindvault/registry-client build",
+    "build:server": "node init && pnpm run build:registry-client && pnpm --filter @mindvault/server build",
     "db:generate": "pnpm --filter @mindvault/server db:generate",
     "db:migrate": "pnpm --filter @mindvault/server db:migrate",
     "generate-wallet": "pnpm --filter @mindvault/server generate-wallet",
@@ -59,8 +59,8 @@
   "license": "MIT",
   "pnpm": {
     "auditConfig": {
-      "ignoreCves": [
-        "CVE-2026-14257"
+      "ignoreGhsas": [
+        "GHSA-mh99-v99m-4gvg"
       ]
     },
     "overrides": {
@@ -77,11 +77,6 @@
       "brace-expansion": "^5.0.8",
       "js-yaml": "^4.3.0",
       "fast-uri": "^3.1.4"
-    },
-    "auditConfig": {
-      "ignoreGhsas": [
-        "GHSA-mh99-v99m-4gvg"
-      ]
     }
   }
 }

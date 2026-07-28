@@ -2,7 +2,7 @@
   "name": "@mindvault/mcp",
   "version": "1.0.0",
   "type": "module",
-  "description": "MCP server for MindVault — AI agent access to the vault",
+  "description": "MCP server for MindVault \u2014 AI agent access to the vault",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsx src/index.ts",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "dev": "node init && tsx src/index.ts",
     "smoke": "tsx scripts/smoke.ts",
     "test": "vitest run",
     "prepublish:check": "tsx scripts/prepublish-check.ts"
