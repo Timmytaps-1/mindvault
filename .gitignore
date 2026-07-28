@@ -27,3 +27,6 @@ packages/registry-client/bindings-tmp/
 .DS_Store
 .vercel
 .idea/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
