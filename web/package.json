@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc && vite build",
     "bundle:stats": "tsc && vite build && open stats.html",
     "preview": "vite preview",
     "test": "vitest run"

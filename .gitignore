@@ -11,8 +11,6 @@ target/
 web/stats.html
 
 # Secrets — never commit real env files (only .env.example is tracked)
-.env
-.env.local
 .env.*.local
 
 # Stellar CLI local identities (contain secret keys)
@@ -27,3 +25,7 @@ packages/registry-client/bindings-tmp/
 .DS_Store
 .vercel
 .idea/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
